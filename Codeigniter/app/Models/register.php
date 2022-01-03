@@ -31,7 +31,7 @@ if (isset($_REQUEST['username'], $_REQUEST['password'])){
         
        echo "<div class='sucess'>
              <h3>Vous êtes inscrit avec succès.</h3>
-             <p>Cliquez ici pour vous <a href='login.php'>connecter</a></p>
+             <p>Cliquez ici pour vous <a href='Login.php'>connecter</a></p>
        </div>";
     }
 }
