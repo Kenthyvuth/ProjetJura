@@ -1,16 +1,3 @@
-<?php
-  // Initialiser la session
-  session_start();
-  
-  // Vérifiez si l'utilisateur est connecté, sinon redirigez-le vers la page de connexion
-  if(!isset($_SESSION["username"])) {
-      
-    header("Location: login.php");
-    exit(); 
-  }
-  
-  $username = $_SESSION['username'];
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -23,9 +10,6 @@
             <p>
                 C'est votre tableau de bord.
             </p>
-            <a>
-                <?php check($username);?>
-            </a>
             <a href="logout.php">
                 Déconnexion
             </a>
